@@ -1,6 +1,6 @@
 var computer = 0;
 var you = 0;
-let images = ['images/rock.png', 'images/paper.png', 'images/scissors.png'];
+let images = ['images/rock.svg', 'images/paper.svg', 'images/scissors.svg'];
 
 function selectAction(action) {
   switch (action) {
@@ -22,6 +22,8 @@ function selectAction(action) {
 function selectcomputer() {
   computer = Math.floor(Math.random() * 3);
   document.getElementById('computer_img').src = images[computer];
+  document.getElementById('computer_img').style = 'background-color:red';
+  document.getElementById('you_img').style = 'background-color:blue';
 }
 
 function game() {

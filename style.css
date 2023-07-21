@@ -3,16 +3,20 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    border-bottom: solid gray 1px;
+    padding-bottom: 1rem;
   }
   
   h2 {
     text-transform: uppercase;
     text-align: center;
+    margin-top: 0.4rem;
   }
   
   h1 {
     text-align: center;
     min-width: 225px;
+    margin-bottom: 0;
   }
   .result_box {
     align-self: center;
@@ -30,6 +34,9 @@
     width: 100px;
     margin: 20px;
     transition-duration: 300ms;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
   }
   
   #rock_img:hover,
@@ -52,16 +59,41 @@
     background-color: rgba(10, 226, 10, 0.295);
     border-radius: 10px;
     cursor: pointer;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
+    margin: 1rem;
   }
 
   #reset:hover {
     font-size: 24px;
+    background-color: coral;
   }
 
   #computer_img,
   #you_img {
     transition-duration: 300ms;
     transform: rotateY(90deg);
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+    padding: 1rem;
   }
   
+  .heading {
+    border-bottom: solid gray 1px;
+    padding-bottom: 1rem;
+  }
+  .you , .computer{
+    padding: 0 1rem;
+  }
+  .you >p , .computer >p{
+    margin-bottom: 0;
+  }
+  .you >h2 , .computer >h2{
+    margin-bottom: 0;
+  }
+  .main-img {
+    display: flex;
+    border: solid 1px gray;
+    border-radius: 1rem;
+    background-color: gray;
+  }
