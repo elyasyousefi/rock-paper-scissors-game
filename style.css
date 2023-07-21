@@ -31,7 +31,7 @@
   #rock_img,
   #paper_img,
   #scissors_img {
-    width: 100px;
+    width: 50px;
     margin: 20px;
     transition-duration: 300ms;
     background-color: antiquewhite;
