@@ -1,0 +1,67 @@
+.competitors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    min-width: 225px;
+  }
+  .result_box {
+    align-self: center;
+  }
+  
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #rock_img,
+  #paper_img,
+  #scissors_img {
+    width: 100px;
+    margin: 20px;
+    transition-duration: 300ms;
+  }
+  
+  #rock_img:hover,
+  #paper_img:hover,
+  #scissors_img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  p {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+  #reset {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgba(10, 226, 10, 0.295);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+
+  #reset:hover {
+    font-size: 24px;
+  }
+
+  #computer_img,
+  #you_img {
+    transition-duration: 300ms;
+    transform: rotateY(90deg);
+  }
+  
