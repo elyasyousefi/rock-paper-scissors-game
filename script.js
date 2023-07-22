@@ -29,6 +29,8 @@ function selectcomputer() {
 function game() {
   document.getElementById('you_img').style.transform = 'rotateY(0deg)';
   document.getElementById('computer_img').style.transform = 'rotateY(0deg)';
+  document.querySelector (".you >h2").style.transform = "translateY(0px)";
+  document.querySelector(".computer > h2").style.transform = "translateY(0px)";
   if (computer == you) {
     document.getElementById('result').innerHTML = 'DRAW !';
     document.getElementById('result').style = 'color:black';
@@ -54,6 +56,8 @@ function game() {
 function restart() {
   document.getElementById('you_img').style.transform = 'rotateY(90deg)';
   document.getElementById('computer_img').style.transform = 'rotateY(90deg)';
+  document.querySelector (".you >h2").style.transform = "translateY(100px)";
+  document.querySelector(".computer > h2").style.transform = "translateY(100px)";
   document.getElementById('score_you').innerHTML = 0;
   document.getElementById('score_computer').innerHTML = 0;
   document.getElementById('result').innerHTML = 'Try Again !';
