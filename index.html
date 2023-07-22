@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,34 +10,42 @@
 </head>
 
 <body>
-    <h1 class="heading">Rock, Paper & Scissors Game</h1>
-    <div class="competitors">
-        <div class="computer">
-            <h2>computer</h2>
-            <div class="main-img">
-                <img src="./images/paper.svg" id="computer_img" />
+    <div class="header">
+        <h1 class="heading">Rock, Paper & Scissors Game</h1>
+    </div>
+    <div class="app">
+        <div class="main-box">
+            <div class="competitors">
+                <div class="computer">
+                    <h2>computer</h2>
+                    <div class="main-img">
+                        <img src="./images/paper.svg" id="computer_img" />
+                    </div>
+                    <h4 id="computer_imgname"></h4>
+                    <p id="score_computer">0</p>
+                </div>
+                <div class="you">
+                    <h2>you</h2>
+                    <div class="main-img">
+                        <img src="./images/rock.svg" id="you_img" />
+                    </div>
+                    <h4 id="you_imgname"></h4>
+                    <p id="score_you">0</p>
+                </div>
             </div>
-            <h4 id="computer_imgname"></h4>
-            <p id="score_computer">0</p>
         </div>
-        <div class="result_box">
+        <div class="result-box">
             <button id="reset" onclick="restart()">Restart</button>
             <h1 id="result">RESULT</h1>
         </div>
-        <div class="you">
-            <h2>you</h2>
-            <div class="main-img">
-                <img src="./images/rock.svg" id="you_img" />
+        <div class="selection-box">
+            <h2>Please Select One</h2>
+            <div class="images">
+                <img onclick="selectAction('rock')" src="./images/rock.svg" id="rock_img" />
+                <img onclick="selectAction('paper')" src="./images/paper.svg" id="paper_img" />
+                <img onclick="selectAction('scissors')" src="./images/scissors.svg" id="scissors_img" />
             </div>
-            <h4 id="you_imgname"></h4>
-            <p id="score_you">0</p>
         </div>
-    </div>
-    <h2>Please Select One</h2>
-    <div class="images">
-        <img onclick="selectAction('rock')" src="./images/rock.svg" id="rock_img" />
-        <img onclick="selectAction('paper')" src="./images/paper.svg" id="paper_img" />
-        <img onclick="selectAction('scissors')" src="./images/scissors.svg" id="scissors_img" />
     </div>
 </body>
 
