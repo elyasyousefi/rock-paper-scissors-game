@@ -49,6 +49,8 @@ function game(computer,you) {
     document.getElementById('result').style = 'color:red';
     document.getElementById('score_computer').innerHTML++;
   }
+  document.querySelector("#result").style.transitionDuration = "300ms";
+
 }
 
 function restart() {
