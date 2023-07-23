@@ -1,8 +1,7 @@
-var computer = 0;
-var you = 0;
-let images = ['images/rock.svg', 'images/paper.svg', 'images/scissors.svg'];
-
 function selectAction(action) {
+  let images = ['images/rock.svg', 'images/paper.svg', 'images/scissors.svg'];
+  let computer = Math.floor(Math.random() * 3);
+  let you = 0;
   switch (action) {
     case 'rock':
       you = 0;
@@ -15,21 +14,20 @@ function selectAction(action) {
       break;
   }
   document.getElementById('you_img').src = images[you];
-  selectcomputer();
-  game();
+  selectcomputer(images,computer);
+  game(computer,you);
 }
 
-function selectcomputer() {
-  computer = Math.floor(Math.random() * 3);
+function selectcomputer(images,computer) {
   document.getElementById('computer_img').src = images[computer];
   document.getElementById('computer_img').style = 'background-color:red';
   document.getElementById('you_img').style = 'background-color:blue';
 }
 
-function game() {
+function game(computer,you) {
   document.getElementById('you_img').style.transform = 'rotateY(0deg)';
   document.getElementById('computer_img').style.transform = 'rotateY(0deg)';
-  document.querySelector (".you >h2").style.transform = "translateY(0px)";
+  document.querySelector(".you >h2").style.transform = "translateY(0px)";
   document.querySelector(".computer > h2").style.transform = "translateY(0px)";
   if (computer == you) {
     document.getElementById('result').innerHTML = 'DRAW !';
@@ -56,7 +54,7 @@ function game() {
 function restart() {
   document.getElementById('you_img').style.transform = 'rotateY(90deg)';
   document.getElementById('computer_img').style.transform = 'rotateY(90deg)';
-  document.querySelector (".you >h2").style.transform = "translateY(12vw)";
+  document.querySelector(".you >h2").style.transform = "translateY(12vw)";
   document.querySelector(".computer > h2").style.transform = "translateY(12vw)";
   document.getElementById('score_you').innerHTML = 0;
   document.getElementById('score_computer').innerHTML = 0;
