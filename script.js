@@ -56,8 +56,8 @@ function game() {
 function restart() {
   document.getElementById('you_img').style.transform = 'rotateY(90deg)';
   document.getElementById('computer_img').style.transform = 'rotateY(90deg)';
-  document.querySelector (".you >h2").style.transform = "translateY(15vh)";
-  document.querySelector(".computer > h2").style.transform = "translateY(15vh)";
+  document.querySelector (".you >h2").style.transform = "translateY(12vw)";
+  document.querySelector(".computer > h2").style.transform = "translateY(12vw)";
   document.getElementById('score_you').innerHTML = 0;
   document.getElementById('score_computer').innerHTML = 0;
   document.getElementById('result').innerHTML = 'Try Again !';
